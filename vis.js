@@ -8,3 +8,7 @@ circle.setAttribute('cy', '250');
 circle.setAttribute('r', '50');
 circle.setAttribute('fill', 'blue');
 svg.appendChild(circle);
+
+for(let i=0; i< circlerCount; i++){
+    const(x;)
+}
