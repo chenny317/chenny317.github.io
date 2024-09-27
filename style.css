@@ -1,0 +1,542 @@
+
+body {
+    background-color: #f7f3e6;
+  
+    background-size: cover;
+    padding: 2rem;
+    margin: 0;
+    padding-top: 6.5rem;
+    text-align: center;
+  }
+  
+  /* resource: https://stackoverflow.com/questions/28279989/multiple-font-weights-one-font-face-query */
+  @font-face {
+      font-family: "roboto-med-500";
+      src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap') format("truetype");
+  }
+  
+  @font-face {
+      font-family: "roboto-light-300";
+      src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap') format("truetype");
+  }
+  
+  
+  header{
+    z-index: 1;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    margin: 0 auto;
+    position: fixed;
+    background-color: #f7f3e6;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .element {
+    padding-bottom: 2rem;
+    border-top-width: 0.15rem;
+    border-top-style: solid;
+    border-top-color: black;
+  }
+  
+  h1 {
+    font-family: "roboto-med-500", Verdana, Tahoma;
+    font-size: 44px;
+    margin-top: 1rem;
+    margin-bottom: 30px;
+    color:#383838;
+  }
+  
+  h2 {
+    font-family: "roboto-med-500", Verdana, Tahoma;
+    font-size: 36px;
+    margin-top: 1rem;
+    color:#383838;
+  }
+  
+  h3 {
+    font-family: "roboto-med-500", Verdana, Tahoma;
+    font-size: 28px;
+    font-style: italic;
+    margin-top: 1rem;
+    color:#383838;
+  }
+  
+  h4 {
+    font-family: "roboto-med-500", Verdana, Tahoma;
+    font-size: 20px;
+    margin-bottom: 0.25rem;
+    color:#383838;
+  }
+  
+  p {
+    font-family: "roboto-light-300", Verdana, Tahoma;
+    margin-top: 0;
+    color:#383838;
+  }
+  
+  nav a {
+    font-family: "roboto-light-300", Verdana, Tahoma;
+  }
+  
+  nav {
+    padding-bottom: 50px;
+  }
+  
+  nav a:hover, nav a:focus {
+    color: #fcd2ed;
+  }
+  
+  code {
+    font-family: "roboto-light-300", Verdana, Tahoma;
+    background-color: #383838;
+    color: #f7f3e6;
+    padding: 0.5rem;
+    display: block;
+    border-radius: 5px;
+  }
+  
+  /*square: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_square*/
+  .sky-blue {
+    height: 50px;
+    width: 50px;
+    background-color: #fcd2ed;
+  }
+  
+  .creamy-white {
+    height: 50px;
+    width: 50px;
+    outline-style: ridge;
+    background-color: #f7f3e6;
+  }
+  
+  .dark-blue {
+    height: 50px;
+    width: 50px;
+    background-color: #383838;
+  }
+  
+  label{
+    font-family: "roboto-light-300", Verdana, Tahoma;
+  }
+  
+  legend{
+    font-family: "roboto-light-300", Verdana, Tahoma;
+  }
+  
+  
+  /* INTERACTIVE ELEMENTS  */
+  
+  /* Styling for the navigation button
+  Resource: making round button: https://alvarotrigo.com/blog/css-round-button/ */
+  .button-nav {
+    font-family: "roboto-light-300", Verdana, Tahoma;
+    border-radius: 5px;
+    border: 1px solid #fcfeff;
+    padding: 10px 20px;
+    display: inline-block;
+    /*padding: 0.5rem;*/
+    color: white;
+    background-color: #383838;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
+  
+  .button-navreset {
+    font-family: "roboto-light-300", Verdana, Tahoma;
+    border-radius: 5px;
+    border: 1px solid #383838;
+    padding: 10px 20px;
+    display: inline-block;
+    /*padding: 0.5rem;*/
+    color: #383838;
+    background-color: #fcd2ed;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
+  
+  .button-nav:hover, .button-nav:focus {
+    background-color: rgb(200,200,200);
+  }
+  
+  .button-navreset:hover, .button-navreset:focus {
+    background-color: rgb(200,200,200);
+  }
+  
+  .in-textlink{
+    font-family: "roboto-light-300", Verdana, Tahoma;
+  }
+  
+  .in-textlink:hover, .in-textlink:focus {
+    color: #fcd2ed;
+  }
+  
+  .image-link{
+   padding: 50px;
+   transition: transform .2s; /* Animation */
+   width: 50px;
+   height: 50px;
+   margin: 0 auto;
+  }
+  
+  .image-link:hover {
+    transform: scale(1.5);
+  }
+  
+  .user-registration:hover, .user-registration:focus {
+    color: white;
+    background-color: #fcd2ed;
+  }
+  
+  input[type=radio] {
+    accent-color: #fcd2ed;
+  }
+  
+  
+  /*submit reset button*/
+  input[type=text] {
+    color: #FFFFFF;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #f7f3e6;
+    height:30px;
+    width:130px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+  }
+  
+  input[type=text]:hover {
+    border: 2px solid black;
+  }
+  
+  input[type=text]:focus {
+    background-color: #72A4D2;
+  }
+  
+  
+  
+  label{
+    color: #383838;
+  }
+  
+  
+  
+  
+  
+  /* list */
+  li{
+    font-family: "roboto-light-300", Verdana, Tahoma;
+  }
+  
+  li:hover {
+    color: #fcd2ed;
+  }
+  
+
+  
+  /*about page bio section*/
+.story-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    grid-auto-rows: minmax(6.25rem, auto);
+    margin: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 9rem;
+    width: 100%;
+    max-width: 71rem;
+  }
+  .story-container .button {
+    display: block;
+  }
+  
+  .story-container h1 {
+    text-align: left;
+  }
+  .story-container h2 {
+    text-align: left;
+  }
+  .story-container h3 {
+    text-align: left;
+  }
+  
+  .storyimg-product {
+    margin:auto;
+  }
+  
+  .list-container{
+    text-align: left;
+    display: flex;
+    flex-grow: 2;
+    flex-direction: row;
+    position: relative;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    flex-wrap: wrap;
+    justify-content: left;
+    
+  }
+  .list-container ul{
+    list-style-type: circle;
+  }
+  .list-p{
+    text-align: left;
+    font-size:1.4rem;
+    
+  }
+  /*bio section end*/
+  /*you might like*/
+  .experience {
+    display: grid; 
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    grid-gap: 3rem;
+    max-width: 40rem;
+    margin: auto;
+  }
+  .experience-item {
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    max-width: 100%;
+  }
+  .best-project-contant{
+    text-align: left;
+  }
+  
+  .two-end-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .two-end-display .p {
+    text-align: left;
+    margin-top: 1rem;
+    font-family: 'Louis-regular',sans-serif;
+    font-size: 0.8rem;
+  }
+  
+  .best-project-button{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  a .clickable:focus {
+  
+    scale: 1.1;
+    opacity: 0.7;
+  }
+  .image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  figure {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
+    border: none;
+    font-size: 0;
+  }
+  
+  /*linkedin image*/
+  
+.linkedin_image{
+    margin-top: 2rem;
+    transition:transform .2s;
+    height: 1.5rem;
+    width: auto;
+  }
+  .linkedin_image:hover, .linkedin_image:focus{
+    transform: scale(1.5);
+  }
+  /*contact*/
+.contact-grid {
+    margin: auto;
+    width: 100%;
+    max-width: 54rem;
+    display: flex;
+    
+    flex-direction: row;
+  
+  }
+  .contact-order {
+    border-right: 0.05rem solid black;
+  }
+  .contact-section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 0rem;
+    width: 30rem;
+  }
+  .box1 {
+    background-color: #f7f3e6;
+    border-radius: 0.3rem;
+    display: block;
+    max-width: 19rem;
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+  
+    /*put in responsive*/
+    position: sticky;
+    top: 3rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .connect-with-me {
+    margin-top: 3rem;
+  }
+  .connect-heading {
+    text-align: left;
+  }
+  .connect-p{
+    text-align: left;
+    margin-left:3rem;
+  }
+  
+  .connect_box3 {
+    border: none;
+    max-width: 44rem;
+    width: 100%;
+    margin-left: 1rem;
+    margin-top:2rem;
+    
+  }
+  .connect-box {
+    background-color: #f7f3e6;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 2rem; */
+    /* margin-top: 1rem; */
+    /* margin-right: 5rem; */
+    margin-bottom: 5rem;
+    text-align: left;
+  }
+  .connect-box p{
+    margin-top: -1rem;
+    margin-bottom: 2.5rem;
+  }
+  .resume-button{
+    margin-top: -1rem;
+    padding-left: 0rem;
+    font-size: 1rem;
+  
+    border: none;
+    -webkit-text-fill-color: black;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-family: 'Louis-bold',sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    
+  }
+  .resume-button:hover, .resume-button:focus{
+    border: none;
+    -webkit-text-fill-color: black;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-family: 'Louis-bold',sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  .contact_button_box{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .contact-form {
+    max-width: 30rem;
+  
+    width: 100%;
+  }
+  .contact-form-space{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .contact-form .button {
+    padding-left: 0rem;
+    font-size: 1.6rem;
+    display: flex;
+  }
+  .contact-form .button:hover, .button:focus {
+    padding-left: 0rem;
+    font-size: 1.6rem;
+  
+    font-size: 1.8rem;
+    display: flex;
+  }
+  .text-box {
+    font-family: "Louis-light", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.08ch;
+  }
+  .text-box {
+    
+    text-decoration: none;
+    /*max-width: 20rem;*/
+    
+    height: 4.188rem;
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    margin: 1.25rem 0;
+    display: inline-block;
+    border: 0.063rem solid #000000;
+    box-sizing: border-box;
+  
+  }
+  .text-box-message {
+    height: 4.188rem;
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    margin: 1.25rem 0;
+    display: inline-block;
+    border: 0.063rem solid #000000;
+    box-sizing: border-box;
+    height: 74%;
+  }
+  
+  .contact__form-area {
+    height: 10rem;
+  }
+  .contact__form-area textarea {
+    resize: none;
+    font-family:'Louis-Light';
+    
+  }
+  /*contact end*/
+  
+  /*progress bar*/
+.progress-container {
+    width: 100%;
+    height: 0.188rem;
+    background: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .progress-bar {
+    height: 0.188rem;
+    background: #093A83;
+    width: 0%;
+  }
